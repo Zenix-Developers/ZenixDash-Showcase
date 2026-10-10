@@ -1,41 +1,105 @@
 <div align="center">
 
-# ZenixDash
+<img src="assets/banner.svg" alt="ZenixDash" width="100%">
 
-### Your hosting empire, beautifully in one place.
+<br>
 
-*Game servers, virtual servers and websites — launched, managed and loved from a single graceful dashboard.*
+![Game Servers](https://img.shields.io/badge/Game_Servers-6366f1?style=for-the-badge)
+![Virtual Servers](https://img.shields.io/badge/Virtual_Servers-8b5cf6?style=for-the-badge)
+![Websites](https://img.shields.io/badge/Websites-a78bfa?style=for-the-badge)
+![AI Copilot](https://img.shields.io/badge/AI_Copilot-4f46e5?style=for-the-badge)
+
+*Game servers, virtual servers and websites: launched, managed and loved from a single graceful dashboard.*
 
 </div>
 
 ---
 
-> **This is a showcase repository.** It contains no source code — only a tour of what ZenixDash is and the experience it creates.
+> **A showcase repository.** It contains no source code, only a tour of what ZenixDash is and the experience it creates.
 
 ## The idea
 
-Running a hosting service should feel effortless, for the people who run it and the people who use it. ZenixDash brings every moving part together — servers, billing, support, community — into one calm, polished control plane, so you can spend your time growing instead of juggling tools.
+Running a hosting service should feel effortless, for the people who run it and the people who use it. ZenixDash brings every moving part together (servers, billing, support and community) into one calm, polished control plane, so you can spend your time growing instead of juggling tools.
+
+## One dashboard, everything inside
+
+```mermaid
+mindmap
+  root((ZenixDash))
+    Game Servers
+      Live console
+      Files and backups
+      Schedules
+      Databases
+    Virtual Servers
+      Cloud images
+      Instant boot
+    Websites
+      Hosted sites
+      Custom domains
+    Commerce
+      Free and trial tiers
+      Premium plans
+      Credits and coins
+    Community
+      Wiki
+      Marketplace
+      Rewards
+      Auctions
+    AI Copilot
+      Diagnostics
+      Support
+      Asks first
+```
+
+## From signup to running, in moments
+
+```mermaid
+flowchart LR
+    A([Sign up]) --> B[Pick a plan]
+    B --> C[Smooth checkout]
+    C --> D[Server launches]
+    D --> E[Manage from the dashboard]
+    E --> F([Grow and share])
+    style A fill:#6366f1,color:#fff,stroke:none
+    style F fill:#8b5cf6,color:#fff,stroke:none
+```
 
 ## For your players and customers
 
-- **Launch in moments.** Spin up a game server in a few clicks, with live console, file manager, backups, schedules and databases right at hand.
-- **Flexible plans.** From free and trial tiers to premium fixed-spec plans, with smooth checkout and effortless renewals.
-- **Virtual servers & websites.** Bring up a cloud-image virtual server or a hosted website from the same familiar dashboard.
-- **A community that comes alive.** A shared wiki, a blueprint marketplace, collaborators, rewards, auctions and activity timelines make every server feel like a place, not just a process.
-- **A helpful AI Copilot.** Ask for what you need in plain language. The Copilot assists with diagnostics and support, and always asks before it does anything important.
+| | Feature | What it feels like |
+|---|---|---|
+| 🚀 | **Launch in moments** | A game server in a few clicks, with console, files, backups, schedules and databases at hand |
+| 💎 | **Flexible plans** | Free and trial tiers, premium fixed-spec plans, smooth checkout, effortless renewals |
+| ☁️ | **Virtual servers** | A cloud-image virtual server from the same familiar dashboard |
+| 🌐 | **Websites** | Hosted sites managed right beside everything else |
+| 🧩 | **Mods and plugins** | One-step installs from popular community catalogs |
+| 🎮 | **Player tools** | Public share pages and activity timelines that make each server feel alive |
+| 🏪 | **Community** | A shared wiki, blueprint marketplace, collaborators, rewards and auctions |
+| 🤖 | **AI Copilot** | Plain-language help that always asks before doing anything important |
 
 ## For the people who run it
 
-- **One operator view** of customers, servers, billing and the health of every integration.
-- **Credits and coins** that make pricing friendly and rewarding.
-- **Fine-grained appearance controls** so the dashboard looks like *your* brand.
-- **Guided setup** that takes you from a fresh install to a running service in minutes.
+| | Feature | What it feels like |
+|---|---|---|
+| 📊 | **One operator view** | Customers, servers, billing and integration health together |
+| 🪙 | **Credits and coins** | Friendly, rewarding pricing |
+| 🎨 | **Your brand** | Appearance controls so the dashboard looks like you |
+| 🧭 | **Guided setup** | From a fresh install to a running service in minutes |
+| 🧾 | **Tidy audit trails** | Clear records of what happened and who did it |
 
-## Why it feels different
+## Experience at a glance
 
-- **Everything in harmony** — one login, one design language, one place to look.
-- **Considerate by design** — assistants that ask first, clear confirmations, and tidy audit trails.
-- **Built for growth** — from your very first server to a thriving community.
+```mermaid
+pie showData title Where the dashboard shines
+    "Game server management" : 30
+    "Billing and plans" : 20
+    "Community and rewards" : 20
+    "Virtual servers and websites" : 20
+    "AI assistance" : 10
+```
+
+*An illustration of where the product puts its emphasis, not usage statistics.*
 
 ---
 
@@ -43,6 +107,6 @@ Running a hosting service should feel effortless, for the people who run it and 
 
 **ZenixDash** · crafted by [Zenix Developers](https://github.com/Zenix-Developers)
 
-*Source code is private. Interested in a closer look? Get in touch.*
+*The source code is private. Interested in a closer look? Get in touch.*
 
 </div>
