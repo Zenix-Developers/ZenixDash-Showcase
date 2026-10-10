@@ -18,6 +18,8 @@
 ---
 
 > **A showcase repository.** It contains no source code, only a tour of what ZenixDash is and the experience it creates.
+>
+> 🌐 **See it live at [dash.zenix.sg](https://dash.zenix.sg).**
 
 ## Contents
 
