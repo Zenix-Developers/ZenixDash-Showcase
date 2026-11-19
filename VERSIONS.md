@@ -2,142 +2,99 @@
 
 [Back to the overview](./README.md)
 
-**Current version: `v4.6.6-pre`**
+**Current version: `v4.7.0`**
 
-ZenixDash has arrived through **52 versioned releases** across four generations. This page lists them newest first, each framed around what it brought to the dashboard. The earliest generations (v1.x to v3.1) are a retrospective sketch of the platform's origins, and the generations from v3.2 onward trace the platform as it matured.
+Newest first, grouped by line. Dates come from the project history, which starts at v3.2 in June 2026. The v4.0 to v4.5 numbers were assigned shortly afterwards to group the July work, so treat them as approximate. Releases before v3.2 predate the tracked history and are summarised rather than listed.
 
 ```mermaid
 timeline
-    title Four generations of ZenixDash
-    v1.x : Sign-in : Sidebar navigation : Server listing : News : Simple coins
-    v2.x : Coin economy : AFK earning : Blueprint marketplace : Auctions : Discord login
-    v3.x : Admin control center : Autonomous upkeep : Tickets : Referrals : Collaborators : Share cards
-    v4.x : Agentic AI Copilot : Moderation engine : Paid plans : VPS and websites : PayPal : Pelican : Invoices
-```
-
-```mermaid
-flowchart LR
-    G1[v1.x<br>Foundations] --> G2[v2.x<br>Economy and community]
-    G2 --> G3[v3.x<br>Operators and automation]
-    G3 --> G4[v4.x<br>AI, real billing, new products]
-    style G1 fill:#a78bfa,color:#fff,stroke:none
-    style G2 fill:#8b5cf6,color:#fff,stroke:none
-    style G3 fill:#6366f1,color:#fff,stroke:none
-    style G4 fill:#4f46e5,color:#fff,stroke:none
+    title ZenixDash by line
+    v3.2 : Coins and renewals : Admin center and analytics : First AI assistant
+    Before v4.0 : Auctions and marketplace : Tickets and referrals : Community wiki
+    v4.0 to v4.5 : AI Copilot : Moderation : Paid plans : VPS and websites
+    v4.6 : PayPal and Pelican : Invoices : Zenix Credit : Security passes
+    v4.7 : Full VPS and website hosting : Tax and reminders : Connect your own AI app
 ```
 
 ## Quick index
 
-| Generation | Releases | Theme |
+| Line | When | What it brought |
 |---|---|---|
-| v4.x | 19 | AI Copilot, moderation, paid plans, VPS and websites, PayPal, Pelican, invoices |
-| v3.x | 18 | Admin control center, autonomous upkeep, community and support tools |
-| v2.x | 10 | Coin economy, marketplace, auctions |
-| v1.x | 5 | Foundations |
+| [v4.7](#v47-line-hosting-that-runs-on-real-machines) | October to November 2026 | Full virtual server and website hosting, billing with tax and reminders, MCP access, persistent agent |
+| [v4.6](#v46-line-more-ways-to-pay-and-a-long-security-pass) | August to September 2026 | PayPal, Pelican, invoices, CurseForge, Zenix Credit, appearance options, security and reliability passes |
+| [v4.0 to v4.5](#v40-to-v45-the-copilot-and-real-money-plans) | July 2026 | AI Copilot, moderation engine, paid plans, VPS and website products, AI support |
+| [v3.2 and before](#v32-and-before-the-base) | Up to July 2026 | The coin-based free tier, the admin center, and the community and support tools |
 
 ---
 
-## Latest additions on the current line
+## v4.7 line: hosting that runs on real machines
 
-- **Virtual servers (October 2026):** a new virtual server copies a cloud image, takes an address from the pool managed in the admin Machines page and boots with cloud-init. The root password is revealed once the server is running, and queued paid checkouts glide through provisioning.
-- **Direction B design pass (September 2026):** a refreshed visual direction now spans the customer, premium, admin, hosting, billing, server-tab, public and Copilot surfaces, with clear shared status wording and tidy "queued" and "unavailable" states.
-- **Game server provisioning polish:** server creation is more graceful when a panel is slow to answer, power actions wait politely while a server installs or transfers, newer and custom Minecraft Java images are preserved, and Minecraft EULA acceptance is explicit.
+### Updates since v4.7.0 (October to November 2026)
 
----
+These landed on the 4.7 line without a new version number.
 
-## v4.x: AI, real-money billing and new products
+- **Fair play on the free tier.** Daily rewards, quests and renewals ask for a quick human check, using a built-in captcha when no outside check is set up. Accounts that have not verified earn a share of rewards that the operator sets, and a nightly scan flags linked accounts for staff to review.
+- **One consistent interface.** Buttons, status labels, tables, page headers, empty states and dates now look and behave the same everywhere.
+- **AI model tiers.** Operators choose which members can use which model tiers, and the Copilot shows locked tiers clearly.
+- **A redesigned Copilot.** The chat drawer became a full assistant panel.
+- **Security reviews** of access control, input handling, sign-in and rate limits, plus fixes across suspension, provisioning, payments, setup, DNS and tickets.
+- **For operators:** staff can set up a server for a paying subscription that has none, deals arranged by hand end on their date unless renewed, upgrades build the new release before switching to it, and there are database backup and restore commands.
 
-### v4.6 line: every currency, every panel, every language
+### v4.7.0 (October 2026)
 
-- **v4.6.6-pre (current):** Auctions and the paid verification tier are paired, with operator-chosen verification amounts. Free accounts can be offered websites as well as game servers, each behind its own toggle with a named plan and per-account allowance. Every account gets a **Billing page** showing its tier, promotional and purchased credit side by side, free services, paid plans with their cancel path, and a delete-account option. Plus broad polish and reliability improvements across usage metering, renewals, status pages and auctions.
-- **v4.6.5-pre:** Polish and reliability across panel integration and power schedules.
-- **v4.6.4-pre:** A wide polish sweep across tickets, billing, auth, servers, admin, notifications, upgrades, domains, imports, scheduled jobs, appearance, plans, modules, moderation, setup, coupons, analytics, share cards and scheduled tasks.
-- **v4.6.3-pre:** Reliability polish across fourteen surfaces, with stronger verification behind the scenes.
-- **v4.6.2-pre:** **Zenix Credit** arrives: a ledger-backed balance with a verification deposit that becomes credit plus a promotional grant, spent promotional-first. **Join for Rewards** pays coins for joining partner Discord servers. Paid customers can see, manage and cancel their own plan. Signup and login screening gains a second signal. The front end blossoms: the **Canvas** theme, independent shape, accent and background axes, custom wallpapers, contrast-checked accent text, a rearrangeable dashboard home with a side rail and per-device widgets, a fleet table view for servers, and container-aware stat cards.
-- **v4.6.1-pre:** A polish pass across the interface and billing displays, with sturdier development and rendering behavior.
-- **v4.6.0 (major):** Six headline arrivals. **PayPal Checkout and Billing** for international audiences. **Pelican Panel support** as an operator-enabled option. **Invoices and billing history** with sequential numbering. **CurseForge modpack installs**. **Proactive AI diagnosis** that explains repeating crash causes in plain English. **Internationalisation**, with nine languages and graceful English fallback.
-
-### v4.4 to v4.5 line: the Copilot gets hands
-
-- **v4.5.1:** Polish for Discord ticket-scoped AI support, with identity and category checks on every call.
-- **v4.5.0:** **Discord ticket-scoped AI support**, **AI tool feature-toggle awareness** (disabled products vanish from every AI surface), **AI model discovery** (pick from the provider's real list), and a smarter safety classifier for virtual server SSH commands.
-- **v4.4.3:** Polish for the new Admin God Mode visibility tools.
-- **v4.4.2:** **Admin God Mode expands** with game-server suspend and resume, background job and queue status, MRR summaries, server listing, plan visibility toggles, user suspension, bans with reasons, unbans and more.
-- **v4.4.1:** Polish and reliability for payment retries, grace-period status and AI tool ownership checks.
-- **v4.4.0 (major):** **ZenNode VPS** and **ZenWeb Hosting** join as real-money products with Stripe Checkout and automatic provisioning, plus a grace, suspend and delete lifecycle for all three paid product lines. The Copilot gains opt-in **per-VPS SSH access** with a consent countdown and safety tiers, an expanded admin toolset, and an upgraded **agentic ticket responder**.
-
-### v4.3 line: paid plans arrive
-
-- **v4.3.1:** Polish and reliability for proxy linking, migration, suspension and scheduled tasks on paid servers.
-- **v4.3.0 (major):** **Paid Plans** on a second premium panel, kept separate from the coin economy. Stripe-hosted checkout with confirmation-driven provisioning, a header **Free/Premium toggle**, a real plans shop, fixed-spec plan cards, the drag-and-drop **Proxy Network Linking** canvas, and smoother handling of simultaneous traffic.
-
-### v4.0 to v4.2 line: the Copilot era
-
-- **v4.2.0:** A polish and reliability pass across sign-in, billing and the AI subsystem.
-- **v4.1.0 (major):** The **Moderation Engine** with granular role-based access for tiered subadmins, **Feature Bans** that restrict specific features while keeping billing active, a banned-identity vault, and an interactive five-tab **Admin Documentation** interface.
-- **v4.0.1:** The **AI Wiki Auto-Writer** turns solved tickets into draft wiki articles.
-- **v4.0.0 (major):** The **Agentic AI Copilot** in a snap-back chat drawer, the **AI Crash Analyzer** with real console-stream integration, the **Auto-Fixer**, **Admin God Mode**, an **AI ticket auto-responder** and **Minecraft Player Live View** with a visual inventory.
+- **Virtual servers, end to end.** Add a machine over SSH and the agent installs itself. Customers can create, rebuild, suspend, resume and destroy servers, log in with an SSH key or a root password (stored encrypted once the operator sets an encryption key), back up on demand or on a schedule, restore at the same address, and use IPv6 and reverse DNS.
+- **Websites.** A site on its own domain gets a certificate when it is created, and it renews itself, and each deploy can be rolled back in one click.
+- **Game servers.** Free ports are picked automatically, a Minecraft EULA checkbox lets the server start first time, each server gets two backup slots with a safety copy before every restore, and the console and collaborator invites became reliable. New **Clone**, **World** and **Profiler** tabs, and a way to **split** part of a server's resources into a second server. Also new: Modrinth modpacks, a traffic limit, pulling files from another host over SFTP or FTP, and an operator page for adding games.
+- **Your own backup storage.** Where the operator allows it, connect your own S3-compatible bucket or Google Drive for offsite backups.
+- **Billing you can file.** Invoice numbers in order, tax rules, seller and customer details on every invoice, and reminders at each step when a payment fails.
+- **Connect your own AI app** over MCP, with tokens that are read-only or can make changes. Destructive actions always come back to the dashboard to confirm.
+- **Persistent agent.** An opt-in assistant that watches your servers and acts only where you allowed it.
+- **Safer approvals.** An AI approval now covers only the exact action approved, and view-only collaborators stay read-only everywhere, including the console.
+- **Accounts and operations.** Registration modes and invites, a sessions page, an audit log with CSV export, Run now for scheduled jobs, a status page feed, a notifications bell and an in-app update prompt.
+- **A design refresh** across the customer, premium, admin, billing, public and Copilot screens.
+- Before release, the product was checked live against real virtual machines, websites and game panels.
 
 ---
 
-## v3.x: operators and automation
+## v4.6 line: more ways to pay, and a long security pass
+
+- **v4.6.6-pre (September 2026):** Security and reliability fixes across AI usage, ad rewards, checkout and server creation. Every stored credential is now encrypted at rest once the operator sets an encryption key.
+- **v4.6.5-pre (September 2026):** Security and reliability fixes across panel keys, power schedules, collaborator access through the AI, and admin controls that reported success when an action had failed.
+- **v4.6.4-pre (September 2026):** A security and reliability pass across tickets, billing, sign-in, servers, admin, notifications, upgrades, domains, imports, moderation and share cards.
+- **v4.6.3-pre (September 2026):** A security and reliability pass across fourteen areas. New: paid verification amounts set by the operator, free websites alongside free game servers, and a **Billing page** for every account with a delete-account option.
+- **v4.6.2-pre (September 2026):** **Zenix Credit**, a credit balance with promotional credit spent first. **Join for Rewards** pays coins for joining partner Discord servers. Paid customers can see, manage and cancel their own plan. Signup screening gains a second check. On the front end: the **Canvas** style, separate choices for shape, accent and background, custom wallpapers, a rearrangeable home with a side rail, and a table view for servers.
+- **v4.6.1-pre (September 2026):** Interface and billing display fixes, including cost badges that now match what billing charges.
+- **v4.6.0 (August 2026):** **PayPal** subscriptions, **Pelican** panel support as an option, **invoices and billing history**, **CurseForge** modpack installs, **plain-English crash diagnosis** for repeating crashes, and a **language picker** with English and a partial German translation.
+
+---
+
+## v4.0 to v4.5: the Copilot and real-money plans
+
+All recorded in July 2026.
+
+- **v4.5.1:** Fixes for Discord ticket-scoped AI support.
+- **v4.5.0:** **AI support in Discord ticket categories**, AI tools that disappear when a product is switched off, model choice from the provider's real list, and a stricter safety check for AI commands on virtual servers.
+- **v4.4.3:** Fixes for the new admin AI tools.
+- **v4.4.2:** **More admin AI tools:** suspend and resume game servers, job and queue status, subscription summaries, plan visibility and account actions.
+- **v4.4.1:** Fixes for payment retries, grace-period status and AI ownership checks.
+- **v4.4.0:** **VPS and website hosting** as paid products with Stripe checkout and a grace, suspend and delete lifecycle. The Copilot gains opt-in **SSH access** to your own VPS with a consent countdown and safety levels, and the ticket agent can look at your servers once you grant access.
+- **v4.3.1:** Fixes for proxy linking, migration, suspension and scheduled tasks on paid servers.
+- **v4.3.0:** **Paid plans** on a separate premium panel, kept apart from the coin economy. Stripe checkout, the **Free and Premium switch** in the header, fixed-spec plan cards and the **proxy network** canvas.
+- **v4.2.0:** Security and reliability fixes across sign-in, billing and the AI.
+- **v4.1.0:** The **moderation engine**: staff roles with fine-grained permissions, feature bans, a banned-identity check at signup, and in-app admin documentation.
+- **v4.0.1:** **Wiki drafts** written from solved tickets.
+- **v4.0.0:** The first AI assistant becomes the **AI Copilot**: every action is sorted by risk, and destructive ones wait for your approval. Also new: the **crash analyzer**, the config **Auto-Fixer**, admin AI tools, an **AI ticket responder** and the **Minecraft players** view.
+
+---
+
+## v3.2 and before: the base
 
 <details>
-<summary><strong>v3.17 down to v3.0 (18 releases)</strong></summary>
+<summary><strong>July 2026 back to v3.2</strong></summary>
 
-- **v3.17.0:** Discord bot webhooks and DMs, an email domain classifier, a global maintenance mode, VPN bypass tokens, SFTP quick-connect, a startup variable editor and a reinstall flow with an automatic backup.
-- **v3.16.0:** The persistent **console-stream manager**: one shared live connection per running server, an SSE relay with automatic fallback, and real pre-crash console tails for crash analysis.
-- **v3.15.0:** **Redeem codes**, **quests and daily rewards**, and a "My Wiki Submissions" tracker.
-- **v3.14.0:** **Collaborators** with role-based permissions, and **server share cards** with custom slugs, social preview images, live metrics and a copy-IP button.
-- **v3.13.0:** A toggleable public **marketing landing page**.
-- **v3.12.0:** The **gifting system** for member-to-member coin transfers.
-- **v3.11.0:** The **support ticket system** with Discord webhook mirroring, and tiered **Bot API tokens**.
-- **v3.10.0:** The **referral system** with dual rewards, and a skip-the-queue option.
-- **v3.9.0:** Polish for live connections and nodes that are slow to respond.
-- **v3.8.0:** Faster server list loading.
-- **v3.7.0:** Refined notification modals.
-- **v3.6.0:** Upgrade to Next.js 16.2 with Turbopack and tuned build configuration.
-- **v3.5.0 (major):** **Fully autonomous background upkeep** with no external scheduler, a **Node Migration Wizard**, a **Wiki Review Queue**, and customizable notification preferences with exponential-decay "remind me later" countdowns.
-- **v3.4.0:** Polish for collaborator invites and Discord login streaks.
-- **v3.3.0:** Smoother out-of-memory monitoring during server boot.
-- **v3.2.0 (major):** The consolidated four-pillar **Admin Control Center**, a real-time **node resource heatmap**, an eight-tab **analytics visualizer**, an IP connection grader, an alt-account detector, an automated OOM monitor and public **server status pages** with interactive graphs.
-- **v3.1.0:** The **WYSIWYG news system**.
-- **v3.0.0:** Next.js routing and component refactoring for the new generation.
-
-</details>
-
----
-
-## v2.x: economy and community
-
-<details>
-<summary><strong>v2.9 down to v2.0 (10 releases)</strong></summary>
-
-- **v2.9.0:** Clean-up of older schemas ahead of the v3 generation.
-- **v2.8.0:** Polished mobile layout for the leaderboard.
-- **v2.7.0 (major):** The **Community Blueprint Marketplace**, **Auctions** (premium blind bidding and standard), a **Global Leaderboard** and **Discord OAuth login**.
-- **v2.6.0:** Refined spacing on the shop page.
-- **v2.5.0:** Smoother transaction list rendering.
-- **v2.4.0:** Polish and reliability for news announcements and the coin ledger.
-- **v2.3.0:** AFK earning continues smoothly when the tab is in the background.
-- **v2.2.0:** The **AFK earning page** and **transaction history** logs.
-- **v2.1.0 (major):** The **Coin Economy**, hybrid billing by deployed resources, an automated suspension and cleanup cycle, **S3 backup offloading** and **Cloudflare subdomain routing**.
-- **v2.0.0:** Dependency refresh and database timeout configuration.
-
-</details>
-
----
-
-## v1.x: foundations
-
-<details>
-<summary><strong>v1.4 down to v1.0 (5 releases)</strong></summary>
-
-- **v1.4.0:** A per-node hardware load view for CPU, RAM and disk.
-- **v1.3.0:** A simple **coins** balance, the seed of the later economy.
-- **v1.2.0:** Admin node-to-node server transfers and user account management.
-- **v1.1.0:** Main dashboard content, stats cards and an admin-driven **news** panel.
-- **v1.0.0:** Initial release with user sign-in, sidebar navigation and server listing.
+- **July 2026, before v4.0:** auctions, offsite backups to S3-compatible storage, quests, referrals with rewards on both sides, support tickets with Discord mirroring, coin gifting, an optional landing page, Cloudflare subdomains, the blueprint marketplace, the community wiki with a review queue, and one shared live console connection per running server. This work was numbered v3.3 to v3.17 afterwards.
+- **v3.2 (June 2026):** the version the tracked history starts from. Sign-in with email, Discord and two-factor authentication. Game server creation with a queue. A coin economy with renewals, a shop and AFK earning. Redeem codes, news, a leaderboard, collaborators, share cards and public status pages. An admin area with a node heatmap, analytics, a server migration wizard, VPN bypass tokens, disposable email blocking, linked-account detection, out-of-memory monitoring, maintenance mode and Bot API tokens. A first AI assistant that could read the console and files, send commands and control power.
+- **Before v3.2:** earlier versions predate the tracked history and are not listed.
 
 </details>
 
